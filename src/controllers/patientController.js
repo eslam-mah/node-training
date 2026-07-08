@@ -8,6 +8,7 @@ exports.getAllPatients = async (req, res) => {
     }
 };
 
+
 exports.getPatientByMrn = async (req, res) => {
     const { mrn } = req.params;
     try {
@@ -22,3 +23,4 @@ exports.getPatientByMrn = async (req, res) => {
         res.status(500).json({ success: false, error: error.message });
     }
 };
+
