@@ -8,6 +8,7 @@ exports.getAllPatients = async (req, res) => {
     }
 };
 
+
 exports.getPatientByMrn = async (req, res) => {
     const { mrn } = req.params;
     try {

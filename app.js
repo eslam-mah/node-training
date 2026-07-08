@@ -5,6 +5,9 @@ const app = express();
 app.use(express.json());
 
 const patientRoutes = require('./src/routes/patientRoutes');
+const sheetRoutes = require('./src/routes/sheetRoutes');
+
+app.use(sheetRoutes);
 
 app.use('/api/patients', patientRoutes);
 
