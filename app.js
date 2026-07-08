@@ -5,6 +5,8 @@ const app = express();
 app.use(express.json());
 
 const patientRoutes = require('./src/routes/patientRoutes');
+const sheetRoutes = require('./src/routes/sheetRoutes');
+
 
 app.use('/patients', patientRoutes);
 app.use( radiologyRoutes);
