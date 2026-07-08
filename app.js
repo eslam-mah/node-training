@@ -6,7 +6,7 @@ app.use(express.json());
 
 const patientRoutes = require('./src/routes/patientRoutes');
 
-app.use('/api/patients', patientRoutes);
+app.use('/patients', patientRoutes);
 
 app.get('/', (req, res) => {
     res.send('Node.js Training API is running smoothly.');
