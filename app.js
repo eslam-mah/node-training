@@ -6,10 +6,15 @@ app.use(express.json());
 
 const patientRoutes = require('./src/routes/patientRoutes');
 const sheetRoutes = require('./src/routes/sheetRoutes');
+const visitRoutes = require("./src/routes/visitRoutes");
+const radiologyRoutes = require("./src/routes/radiologyRoutes");
+const authRoutes = require("./src/routes/authRoutes");
 
 
 app.use('/patients', patientRoutes);
-app.use( radiologyRoutes);
+app.use(authRoutes);
+app.use(radiologyRoutes);
+app.use(visitRoutes);
 app.get('/', (req, res) => {
     res.send('Node.js Training API is running smoothly.');
 });
