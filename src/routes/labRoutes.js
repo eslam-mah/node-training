@@ -25,39 +25,39 @@ router.delete(
 );
 
 // ---------- Lab Results ----------
-// router.get(
-//     "/patients/:mrn/visits/:visit_number/labs/results",
-//     labController.getLabResults
-// );
+router.get(
+    "/patients/:mrn/visits/:visit_number/labs/results",
+    labController.getLabResults
+);
 
-// router.get(
-//     "/labs/orders/:order_id/results",
-//     labController.getResultsByOrder
-// );
+router.get(
+    "/labs/orders/:order_id/results",
+    labController.getResultsByOrder
+);
 
-// router.get(
-//     "/patients/:mrn/visits/:visit_number/labs/abnormal",
-//     labController.getAbnormalLabs
-// );
+router.get(
+    "/patients/:mrn/visits/:visit_number/labs/abnormal",
+    labController.getAbnormalLabs
+);
 
-// router.get(
-//     "/patients/:mrn/visits/:visit_number/labs/timeline",
-//     labController.getLabsTimeline
-// );
+router.get(
+    "/patients/:mrn/visits/:visit_number/labs/timeline",
+    labController.getLabsTimeline
+);
 
-// router.post(
-//     "/labs/orders/:order_id/results",
-//     labController.createLabResult
-// );
+router.post(
+    "/labs/orders/:order_id/results",
+    labController.createLabResult
+);
 
-// router.put(
-//     "/labs/results/:result_id",
-//     labController.updateLabResult
-// );
+router.put(
+    "/labs/results/:result_id",
+    labController.updateLabResult
+);
 
-// router.delete(
-//     "/labs/results/:result_id",
-//     labController.deleteLabResult
-// );
+router.delete(
+    "/labs/results/:result_id",
+    labController.deleteLabResult
+);
 
 module.exports = router;
