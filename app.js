@@ -9,10 +9,12 @@ const sheetRoutes = require('./src/routes/sheetRoutes');
 const visitRoutes = require("./src/routes/visitRoutes");
 const radiologyRoutes = require("./src/routes/radiologyRoutes");
 const authRoutes = require("./src/routes/authRoutes");
-
+const labRoutes = require("./src/routes/labRoutes");
 
 app.use('/patients', patientRoutes);
+app.use(sheetRoutes);
 app.use(authRoutes);
+app.use(labRoutes);
 app.use(radiologyRoutes);
 app.use(visitRoutes);
 app.get('/', (req, res) => {
